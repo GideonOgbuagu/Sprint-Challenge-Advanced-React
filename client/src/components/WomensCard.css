@@ -1,0 +1,11 @@
+.women-card {
+    width: 22%;
+    height: 40vh;
+    background-color: #61dafb;
+    padding: 5%;
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin: 20px; 
+    color: black;
+
+}
