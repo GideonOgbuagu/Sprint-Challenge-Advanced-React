@@ -1,6 +1,7 @@
 .App {
+  
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
 }
 
 .App-header {
@@ -12,18 +13,45 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  color: lightblue;
 }
 
 /* .App-link {
   color: #61dafb;
 } */
 
-.women-container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+
+
+/* From SL - Brandon Harris to Everyone:  02:34 PM */
+.dark-mode__toggle {
+  background: rgba(92, 92, 92, 0.253);
+  border-radius: 50px;
+  /* border: 1px solid #182f3d; */
+  height: 40px;
+  position: relative;
+  width: 80px;
+  margin: 1% auto;
+}
+.toggle {
+  background: rgba(55, 196, 231, 0.719);
+  border-radius: 50px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 40px;
+  transition: left 500ms;
+  border: 2px solid #182f3d;
+  border: 2px solid #1b445e;
 }
 
+.toggled {
+  left: 38px;
+  background: rgba(231, 55, 193, 0.815);
+  background: rgba(55, 196, 231, 0.719);
+}
 
+.dark-mode {
+  background-color: #182f3d;
+}

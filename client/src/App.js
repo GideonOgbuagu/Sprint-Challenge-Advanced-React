@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import WomensCard from './components/WomensCard';
+import WomensList from './components/WomensList';
 
 class App extends Component {
   state = {
     women: []
-  }
+  } 
 
   componentDidMount() {
       axios
@@ -24,19 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
+        <header className="App-header">     
           <h1>
             Women's World Cup - Google Trends
           </h1>
-        </header>
-        <div className="women-container">
-            {this.state.women.map(item => (
-                 <WomensCard key={item.id} women={item}/>
-            ))}
-        </div>
-        
-        
+        </header>  
+      <WomensList women={this.state.women}/>   
       </div>
     );
   }

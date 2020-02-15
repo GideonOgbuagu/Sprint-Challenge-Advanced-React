@@ -1,16 +1,16 @@
-import React from 'react';
-import './WomensCard.css';
+import React from "react";
+import "./WomensCard.css";
 
-const WomensCard = (props) => {
-    console.log(props)
-        return (
-            <div className="women-card">
-                <p>Name: {props.women.name} </p>
-                <p>Country: {props.women.country}</p>
-                <p>Searches on Google: {props.women.searches}</p>
-            </div>
-        )
-    
-}
+
+const WomensCard = props => {
+  console.log(props);
+  return (
+    <div className='women-card'>
+      <p>Name: <b>{props.women.name}</b> </p>
+      <p>Country: <b>{props.women.country}</b></p>
+      <p>Number of Searches: <b>{props.women.searches}</b></p>
+    </div>
+  );
+};
 
 export default WomensCard;
