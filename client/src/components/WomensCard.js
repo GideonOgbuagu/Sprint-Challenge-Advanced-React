@@ -8,7 +8,7 @@ const WomensCard = props => {
     <div className='women-card'>
       <p>Name: <b>{props.women.name}</b> </p>
       <p>Country: <b>{props.women.country}</b></p>
-      <p>Number of Searches: <b>{props.women.searches}</b></p>
+      <p>Searches: <b>{props.women.searches}</b></p>
     </div>
   );
 };
